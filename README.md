@@ -1,2 +1,2 @@
-# codenation-Class-Roster
+# Codenation-Class-Roster
 Created with CodeSandbox
