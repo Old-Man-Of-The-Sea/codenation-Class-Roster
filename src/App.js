@@ -1,6 +1,7 @@
 import "./styles.css";
 
 export default function App() {
+  //did this cause im lazy... and dont know how it works
   let One = "He/Him";
   let Two = "She/Hers";
   let Date = "2020";
@@ -74,18 +75,15 @@ export default function App() {
     [I],
     [D]
   );
-
+  let Row11 = Person("Yasir", "Hirsi", [One]);
   // let Row5 = Person("");
   return (
     <div className="App">
       <h1>Codenation Class Roster</h1>
       {Row1} {Row2} {Row3}
       {/* {3.2} */} {Row4} {Row5}
-      {Row6}
-      {Row7}
-      {Row8}
-      {Row9}
-      {Row10}
+      {Row6} {Row7} {Row8}
+      {Row9} {Row10} {Row11}
     </div>
   );
 }
