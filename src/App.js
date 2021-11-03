@@ -51,13 +51,41 @@ export default function App() {
     [T],
     [C]
   );
+  let Row6 = Person("Diego", "Cruz", [One], "Macalester", "2026", "Red", "I");
+  let Row7 = Person("Heber", "Cruz, Hernandez", [One]);
+  let Row8 = Person("Yonatan", "De La Mora", [One]);
+  let Row9 = Person(
+    "Denny",
+    "Fernandez",
+    [One],
+    "Williamsburg Charter High School",
+    [Date],
+    [B],
+    [T],
+    [D]
+  );
+  let Row10 = Person(
+    "Athziri",
+    "Garcia",
+    "Two",
+    "Cristo Rey ",
+    [Date],
+    [B],
+    [I],
+    [D]
+  );
 
-  // let Row5 = "";
+  // let Row5 = Person("");
   return (
     <div className="App">
       <h1>Codenation Class Roster</h1>
       {Row1} {Row2} {Row3}
       {/* {3.2} */} {Row4} {Row5}
+      {Row6}
+      {Row7}
+      {Row8}
+      {Row9}
+      {Row10}
     </div>
   );
 }
