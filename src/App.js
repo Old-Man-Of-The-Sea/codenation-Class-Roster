@@ -30,7 +30,16 @@ export default function App() {
     [I],
     "Rooster"
   );
-  let Row3 = Person("Chris", "B", [One], "OCA", [Date], [B], [I], "FISH");
+  let Row3 = Person(
+    "Christopher",
+    "Bonifacio",
+    [One],
+    "OCA",
+    [Date],
+    [B],
+    [I],
+    "FISH"
+  );
   //let Row3.2 = Person("Joe", "Idk", "He/His");
   let Row4 = Person(
     "Angel",
