@@ -120,10 +120,10 @@ export default function App() {
     console.log(person);
     // TODO
     return (
-      <div>
+      <span>
         {person[0]} &nbsp; {person[1]} &nbsp; {person[2]}&nbsp; {person[3]}
         &nbsp;{person[4]}&nbsp;{person[5]}&nbsp;{person[6]}&nbsp;{person[7]}
-      </div>
+      </span>
     );
   });
 
