@@ -10,82 +10,7 @@ export default function App() {
   let I = "Insta";
   let D = "Dog";
   let C = "Cat";
-
-  // let Row0 = Person(
-  //   "Mikkail",
-  //   "Allen",
-  //   "He/His",
-  //   "Williamsburg Charter High School",
-  //   [B],
-  //   [T],
-  //   [D]
-  // );
-  // let Row1 = Person(
-  //   "Justin",
-  //   "Apupalo",
-  //   [One],
-  //   "NYIT",
-  //   "2025",
-  //   [B],
-  //   [I],
-  //   "Rooster"
-  // );
-  // let Row2 = Person(
-  //   "Christopher",
-  //   "Bonifacio",
-  //   [One],
-  //   "OCA",
-  //   [Date],
-  //   [B],
-  //   [I],
-  //   "FISH"
-  // );
-  // //let Row3.2 = Person("Joe", "Idk", "He/His");
-  // let Row3 = Person(
-  //   "Angel",
-  //   "Campoverde",
-  //   [One],
-  //   "Cristo Rey High School",
-  //   [Date],
-  //   "Purple",
-  //   [I],
-  //   [D]
-  // );
-  // let Row4 = Person(
-  //   "Mahdiya",
-  //   "Chowdhury",
-  //   [Two],
-  //   "TYWLS",
-  //   "2023",
-  //   "Pink",
-  //   [T],
-  //   [C]
-  // );
-  // let Row5 = Person("Diego", "Cruz", [One], "Macalester", "2026", "Red", "I");
-  // let Row6 = Person("Heber", "Cruz, Hernandez", [One]);
-  // let Row7 = Person("Yonatan", "De La Mora", [One]);
-  // let Row8 = Person(
-  //   "Denny",
-  //   "Fernandez",
-  //   [One],
-  //   "Williamsburg Charter High School",
-  //   [Date],
-  //   [B],
-  //   [T],
-  //   [D]
-  // );
-  // let Row9 = Person(
-  //   "Athziri",
-  //   "Garcia",
-  //   "Two",
-  //   "Cristo Rey ",
-  //   [Date],
-  //   [B],
-  //   [I],
-  //   [D]
-  // );
-  // let Row10 = Person("Yasir", "Hirsi", [One]);
-  // // let Row5 = Person("");
+  //
 
   let people = [
     [
@@ -96,7 +21,8 @@ export default function App() {
       [B],
       [T],
       [D] //0
-    ][("Justin", "Apupalo", [One], "NYIT", "2025", [B], [I], "Rooster")], //1
+    ],
+    [("Justin", "Apupalo", [One], "NYIT", "2025", [B], [I], "Rooster")], //1
     [
       "Christopher",
       "Bonifacio",
@@ -164,7 +90,8 @@ export default function App() {
       [B],
       [T],
       [D] //16
-    ][
+    ],
+    [
       ("Andy",
       "Rincon",
       [One],
@@ -176,35 +103,44 @@ export default function App() {
     ],
     ["Eric", "Salazar", [One], "WCHS", [Date], [B], [T], [C]], //18
     ["Alejandro", "Sanchez", [One], "UIC", ["2025"], ["Black"], [I], ["Fish"]], //19
-    ["Itzel", "Sanchez", [Two], "Westinghouse ", [Date], ["purple"], [T], [C]] //20
+    ["Itzel", "Sanchez", [Two], "Westinghouse ", [Date], ["purple"], [T], [C]], //20
+    [
+      "Anton",
+      "Schuster",
+      [One],
+      "Latin School of Chicago ",
+      ["2023"],
+      ["Orange"]
+    ], //21
+    ["Angel", "Smythe", [One]] //22
   ];
 
-  //   return (
-  //     <div className="App">
-  //       <h1>Codenation Class Roster</h1>
-  //       {Row0} {Row1} {Row2}
-  //       {/* {3.2} */} {Row3} {Row4}
-  //       {Row5} {Row6} {Row7}
-  //       {Row8} {Row9} {Row10}
-  //     </div>
-  //   );
-  // }
+  let List = people.map(function (person) {
+    console.log("im here");
+    console.log(person);
+    // TODO
+    return (
+      <div>
+        {person[0]} &nbsp; {person[1]} &nbsp; {person[2]}&nbsp; {person[3]}
+        &nbsp;{person[4]}&nbsp;{person[5]}&nbsp;{person[6]}&nbsp;{person[7]}
+      </div>
+    );
+  });
 
   return (
     <div className="App">
       <h1>Codenation Class Roster</h1>
-      {people}
+      {List}
     </div>
   );
 }
 
-// let array = []
-// for ( let name of Person){
+// let array = [];
+// for (let name of Person) {
 //   let First = name[0];
 //   let Last = name[1];
-// }
-
-// Element.push
+//   let Pronouns = PR[2];
+// };
 
 function Person(First, Last, Pronouns, School, GY, FC, TorI, DogCat) {
   return (
