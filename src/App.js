@@ -127,20 +127,57 @@ export default function App() {
       "Pink",
       [T], //4
       [C]
-    ][("Diego", "Cruz", [One], "Macalester", "2026", "Red", "I")], //5
-
+    ],
+    ["Diego", "Cruz", [One], "Macalester", "2026", "Red", "I"], //5
     [
-      ("Denny",
+      "Denny",
       "Fernandez",
       [One],
       "Williamsburg Charter High School",
       [Date],
       [B],
       [T],
-      [D])
+      [D]
     ], //8
-    ["Athziri", "Garcia", "Two", "Cristo Rey ", [Date], [B], [I], [D]]
-  ]; //9
+    ["Athziri", "Garcia", "Two", "Cristo Rey ", [Date], [B], [I], [D]], //9
+    ["Yasir", "Hirsi", [One], "Mather High School", [Date], ["Red"], [I], [D]], //10
+    ["Francelys", "Lomeli", [Two], "Lindblom", [Date], ["Yellow"], [T], [D]], //11
+    ["Claudia", "Luna-Marcelino", [Two], "P-TECH", [Date], [""], [""], [C]], //12
+    ["Wana", "Marzia", [Two], "P-TECH", [Date], ["Black"], [""], [C]], //13
+    ["Lilly", "Minchala", [Two], "HHSLT", [Date], ["Purple"], [I], ["Rats"]], //14
+    [
+      "Abdulwahab",
+      "Murshed",
+      [One],
+      "Brooklyn College",
+      ["2025"],
+      [B],
+      [T],
+      [D]
+    ], //15
+    [
+      "Abdulwahab",
+      "Murshed",
+      [One],
+      "Brooklyn College",
+      ["2025"],
+      [B],
+      [T],
+      [D] //16
+    ][
+      ("Andy",
+      "Rincon",
+      [One],
+      "Uncommon Leadership Charter HS",
+      [Date],
+      ["Green"],
+      [I],
+      [C]) //17
+    ],
+    ["Eric", "Salazar", [One], "WCHS", [Date], [B], [T], [C]], //18
+    ["Alejandro", "Sanchez", [One], "UIC", ["2025"], ["Black"], [I], ["Fish"]], //19
+    ["Itzel", "Sanchez", [Two], "Westinghouse ", [Date], ["purple"], [T], [C]] //20
+  ];
 
   //   return (
   //     <div className="App">
