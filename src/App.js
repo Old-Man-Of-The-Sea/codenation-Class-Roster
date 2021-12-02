@@ -63,7 +63,15 @@ export default function App() {
       tori: [T], //4
       dogcat: [C]
     },
-    ["Diego", "Cruz", [One], "Macalester", "2026", "Red", "I"], //5
+    {
+      firstName: "Diego",
+      lastname: "Cruz",
+      pronouns: [One],
+      school: "Macalester",
+      gy: "2026",
+      FC: "Red",
+      tori: "I"
+    }, //5
     [
       "Denny",
       "Fernandez",
