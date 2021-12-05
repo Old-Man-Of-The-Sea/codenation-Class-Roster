@@ -72,63 +72,144 @@ export default function App() {
       FC: "Red",
       tori: "I"
     }, //5
-    [
-      "Denny",
-      "Fernandez",
-      [One],
-      "Williamsburg Charter High School",
-      [Date],
-      [B],
-      [T],
-      [D]
-    ], //8
-    ["Athziri", "Garcia", "Two", "Cristo Rey ", [Date], [B], [I], [D]], //9
-    ["Yasir", "Hirsi", [One], "Mather High School", [Date], ["Red"], [I], [D]], //10
-    ["Francelys", "Lomeli", [Two], "Lindblom", [Date], ["Yellow"], [T], [D]], //11
-    ["Claudia", "Luna-Marcelino", [Two], "P-TECH", [Date], "", "", [C]], //12
-    ["Wana", "Marzia", [Two], "P-TECH", [Date], ["Black"], "", [C]], //13
-    ["Lilly", "Minchala", [Two], "HHSLT", [Date], ["Purple"], [I], ["Rats"]], //14
-    [
-      "Abdulwahab",
-      "Murshed",
-      [One],
-      "Brooklyn College",
-      ["2025"],
-      [B],
-      [T],
-      [D]
-    ], //15
-    [
-      "Abdulwahab",
-      "Murshed",
-      [One],
-      "Brooklyn College",
-      ["2025"],
-      [B],
-      [T],
-      [D] //16
-    ],
-    [
-      ("Andy",
-      "Rincon",
-      [One],
-      "Uncommon Leadership Charter HS",
-      [Date],
-      ["Green"],
-      [I],
-      [C]) //17
-    ],
-    ["Eric", "Salazar", [One], "WCHS", [Date], [B], [T], [C]], //18
-    ["Alejandro", "Sanchez", [One], "UIC", ["2025"], ["Black"], [I], ["Fish"]], //19
-    ["Itzel", "Sanchez", [Two], "Westinghouse ", [Date], ["purple"], [T], [C]], //20
-    [
-      "Anton",
-      "Schuster",
-      [One],
-      "Latin School of Chicago ",
-      ["2023"],
-      ["Orange"]
-    ], //21
+    {
+      firstName: "Denny",
+      lastname: "Fernandez",
+      pronouns: [One],
+      school: "Williamsburg Charter High School",
+      gy: [Date],
+      FC: [B],
+      tori: [T],
+      dogcat: [D]
+    }, //8
+    {
+      firstName: "Athziri",
+      lastname: "Garcia",
+      pronouns: [Two],
+      school: "Cristo Rey",
+      gy: [Date],
+      FC: [B],
+      tori: [I],
+      dogcat: [D]
+    }, //9
+    {
+      firstName: "Yasir",
+      lastname: "Hirsi",
+      pronouns: [One],
+      school: "Mather High School",
+      gy: [Date],
+      FC: ["Red"],
+      tori: [I],
+      dogcat: [D]
+    }, //10
+    {
+      firstName: "Francelys",
+      lastname: "Lomeli",
+      pronouns: [Two],
+      school: "Lindblom",
+      gy: [Date],
+      fc: ["Yellow"],
+      tori: [T],
+      dogcat: [D]
+    }, //11
+    {
+      firstName: "Claudia",
+      lastname: "Luna-Marcelino",
+      pronouns: [Two],
+      school: "P-TECH",
+      fc: " ",
+      gy: [Date],
+      tori: " ",
+      dogcat: [C]
+    }, //12
+    {
+      firstName: "Wana",
+      lastname: "Marzia",
+      pronouns: [Two],
+      school: "P-TECH",
+      gy: [Date],
+      fc: ["Black"],
+      tori: " ",
+      dogcat: [C]
+    }, //13
+    {
+      firstName: "Lilly",
+      lastname: "Minchala",
+      pronouns: [Two],
+      school: "HHSLT",
+      gy: [Date],
+      fc: ["Purple"],
+      tori: [I],
+      dogcat: ["Rat"]
+    }, //14
+    {
+      firstName: "Abdulwahab",
+      lastname: "Murshed",
+      pronouns: [One],
+      school: "Brooklyn College",
+      gy: ["2025"],
+      fc: [B],
+      tori: [T],
+      dogcat: [D]
+    }, //15
+    {
+      firstName: "Abdulwahab",
+      lastname: "Murshed",
+      pronouns: [One],
+      school: "Brooklyn College",
+      gy: ["2025"],
+      fc: [B],
+      tori: [T],
+      dogcat: [D] //16
+    },
+    {
+      firstName: "Andy",
+      lastname: "Rincon",
+      pronouns: [One],
+      school: "Uncommon Leadership Charter HS",
+      gy: [Date],
+      fc: ["Green"],
+      tori: [I],
+      dogcat: [C] //17
+    },
+    {
+      firstName: "Eric",
+      lastname: "Salazar",
+      pronouns: [One],
+      school: "WCHS",
+      gy: [Date],
+      fc: [B],
+      tori: [T],
+      dogcat: [C]
+    }, //18
+    {
+      firstName: "Alejandro",
+      lastname: "Sanchez",
+      pronouns: [One],
+      school: "UIC",
+      gy: ["2025"],
+      fc: ["Black"],
+      tori: [I],
+      dogcat: ["Fish"]
+    }, //19
+    {
+      firstName: "Itzel",
+      lastname: "Sanchez",
+      pronouns: [Two],
+      school: "Westinghouse ",
+      gy: [Date],
+      fc: ["purple"],
+      tori: [T],
+      dogcat: [C]
+    }, //20
+    {
+      firstName: "Anton",
+      lastname: "Schuster",
+      pronouns: [One],
+      school: "Latin School of Chicago ",
+      gy: ["2023"],
+      fc: ["Orange"]
+    }, //21
     ["Angel", "Smythe", [One]], //22
     ["Imani", "Taylor", [Two], "P-tech", [Date], "Pink", [T], [C]], //23
     ["Issac", "Teoh", [One], "Queens Technical HS", [Date], [I], [C]], //24
@@ -152,10 +233,9 @@ export default function App() {
     // TODO
     return (
       <span>
-        &nbsp;{person.firstName}&nbsp;{person.lastName}&nbsp;{person.pronouns}
-        &nbsp;{person.school}
-        &nbsp;{person.gy}&nbsp;{person.fc}&nbsp;{person.tori}&nbsp;
-        {person.dogcat}
+        &nbsp;{person.firstName}&nbsp;{person.lastname}&nbsp;{person.pronouns}
+        &nbsp;{person.school}&nbsp;{person.gy}&nbsp;{person.fc}&nbsp;
+        {person.tori}&nbsp;{person.dogcat} &nbsp;
         {/* &nbsp;{person[0]}&nbsp;{person[1]}&nbsp;{person[2]}&nbsp;{person[3]}
         &nbsp;{person[4]}&nbsp;{person[5]}&nbsp;{person[6]}&nbsp;{person[7]} */}
       </span>
