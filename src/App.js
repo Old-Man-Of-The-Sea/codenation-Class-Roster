@@ -1,10 +1,10 @@
 import "./styles.css";
 
 export default function App() {
-  //did this cause im lazy... and dont know how it works
+  //
   let One = "He/Him";
   let Two = "She/Hers";
-  let Date = "2020";
+  let Date = "2022";
   let B = "Blue";
   let T = "TikTok";
   let I = "Insta";
@@ -13,48 +13,65 @@ export default function App() {
   //
 
   let people = [
-    [
-      "Mikkail",
-      "Allen",
-      "He/His",
-      "Williamsburg Charter High School",
-      [B],
-      [T],
-      [D] //0
-    ],
-    [("Justin", "Apupalo", [One], "NYIT", "2025", [B], [I], "Rooster")], //1
-    [
-      "Christopher",
-      "Bonifacio",
-      [One],
-      "OCA",
-      [Date],
-      [B],
-      [I], //2
-      "FISH"
-    ],
-
-    [
-      "Angel",
-      "Campoverde",
-      [One],
-      "Cristo Rey High School",
-      [Date],
-      "Purple",
-      [I], //3
-      [D]
-    ],
-    [
-      "Mahdiya",
-      "Chowdhury",
-      [Two],
-      "TYWLS",
-      "2023",
-      "Pink",
-      [T], //4
-      [C]
-    ],
-    ["Diego", "Cruz", [One], "Macalester", "2026", "Red", "I"], //5
+    {
+      firstName: "Mikkail",
+      lastname: "Allen",
+      pronouns: [One],
+      school: "Williamsburg Charter High School",
+      gy: [Date],
+      fc: [B],
+      tori: [T],
+      dogcat: [D] //0
+    },
+    {
+      firstName: "Justin",
+      lastname: "Apupalo",
+      pronouns: [One],
+      school: "NYIT",
+      gy: "2025",
+      fc: [B],
+      tori: [I],
+      dogcat: "Rooster"
+    }, //1
+    {
+      firstName: "Christopher",
+      lastname: "Bonifacio",
+      pronouns: [One],
+      school: "OCA",
+      gy: [Date],
+      fc: [B],
+      tori: [I], //2
+      dogcat: "FISH"
+    },
+    {
+      firstName: "Angel",
+      lastname: "Campoverde",
+      pronouns: [One],
+      school: "Cristo Rey High School",
+      gy: [Date],
+      fc: "Purple",
+      tori: [I], //3
+      dogcat: [D]
+    },
+    {
+      firstName: "Mahdiya",
+      lastname: "Chowdhury",
+      pronouns: [Two],
+      school: "TYWLS",
+      gy: "2023",
+      fc: "Pink",
+      tori: [T], //4
+      dogcat: [C]
+    },
+    {
+      firstName: "Diego",
+      lastname: "Cruz",
+      pronouns: [One],
+      school: "Macalester",
+      gy: "2026",
+      FC: "Red",
+      tori: "I"
+    }, //5
     [
       "Denny",
       "Fernandez",
@@ -68,8 +85,8 @@ export default function App() {
     ["Athziri", "Garcia", "Two", "Cristo Rey ", [Date], [B], [I], [D]], //9
     ["Yasir", "Hirsi", [One], "Mather High School", [Date], ["Red"], [I], [D]], //10
     ["Francelys", "Lomeli", [Two], "Lindblom", [Date], ["Yellow"], [T], [D]], //11
-    ["Claudia", "Luna-Marcelino", [Two], "P-TECH", [Date], [""], [""], [C]], //12
-    ["Wana", "Marzia", [Two], "P-TECH", [Date], ["Black"], [""], [C]], //13
+    ["Claudia", "Luna-Marcelino", [Two], "P-TECH", [Date], "", "", [C]], //12
+    ["Wana", "Marzia", [Two], "P-TECH", [Date], ["Black"], "", [C]], //13
     ["Lilly", "Minchala", [Two], "HHSLT", [Date], ["Purple"], [I], ["Rats"]], //14
     [
       "Abdulwahab",
@@ -112,26 +129,44 @@ export default function App() {
       ["2023"],
       ["Orange"]
     ], //21
-    ["Angel", "Smythe", [One]] //22
+    ["Angel", "Smythe", [One]], //22
+    ["Imani", "Taylor", [Two], "P-tech", [Date], "Pink", [T], [C]], //23
+    ["Issac", "Teoh", [One], "Queens Technical HS", [Date], [I], [C]], //24
+    ["David", "Vital"[One]], //25
+    ["Desean", "Blackburn", [One], "", [Date], "green", [I], [C]], //26
+    [
+      "Chinaza",
+      "Onwukanjo",
+      [Two],
+      "Frederick Douglass Academy",
+      "2023",
+      "Purple",
+      "Youtube",
+      [D]
+    ] //27
   ];
 
   let List = people.map(function (person) {
-    console.log("im here");
-    console.log(person);
+    // console.log("im here");
+    // console.log(person);
     // TODO
     return (
       <span>
-        {person[0]} &nbsp; {person[1]} &nbsp; {person[2]}&nbsp; {person[3]}
-        &nbsp;{person[4]}&nbsp;{person[5]}&nbsp;{person[6]}&nbsp;{person[7]}
+        &nbsp;{person.firstName}&nbsp;{person.lastName}&nbsp;{person.pronouns}
+        &nbsp;{person.school}
+        &nbsp;{person.gy}&nbsp;{person.fc}&nbsp;{person.tori}&nbsp;
+        {person.dogcat}
+        {/* &nbsp;{person[0]}&nbsp;{person[1]}&nbsp;{person[2]}&nbsp;{person[3]}
+        &nbsp;{person[4]}&nbsp;{person[5]}&nbsp;{person[6]}&nbsp;{person[7]} */}
       </span>
     );
   });
 
   return (
-    <div className="App">
+    <span className="App">
       <h1>Codenation Class Roster</h1>
       {List}
-    </div>
+    </span>
   );
 }
 
@@ -142,24 +177,24 @@ export default function App() {
 //   let Pronouns = PR[2];
 // };
 
-function Person(First, Last, Pronouns, School, GY, FC, TorI, DogCat) {
-  return (
-    <div className="Person">
-      <span class="First">{First}</span>
-      &nbsp;
-      <span class="Last">{Last}</span>
-      &nbsp;
-      <span class="Pronouns">{Pronouns}</span>
-      &nbsp;
-      <span class="School">{School}</span>
-      &nbsp;
-      <span class="Gradution Year">{GY}</span>
-      &nbsp;
-      <span class="Favorite Color">{FC}</span>
-      &nbsp;
-      <span class="Tiktok or Insta">{TorI}</span>
-      &nbsp;
-      <span class="Dogs or Cats">{DogCat}</span>
-    </div>
-  );
-}
+// function Person(First, Last, Pronouns, School, GY, FC, TorI, DogCat) {
+//   return (
+//     <div className="Person">
+//       <span class="First">{First}</span>
+//       &nbsp;
+//       <span class="Last">{Last}</span>
+//       &nbsp;
+//       <span class="Pronouns">{Pronouns}</span>
+//       &nbsp;
+//       <span class="School">{School}</span>
+//       &nbsp;
+//       <span class="Gradution Year">{GY}</span>
+//       &nbsp;
+//       <span class="Favorite Color">{FC}</span>
+//       &nbsp;
+//       <span class="Tiktok or Insta">{TorI}</span>
+//       &nbsp;
+//       <span class="Dogs or Cats">{DogCat}</span>
+//     </div>
+//   );
+// }
