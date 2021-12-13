@@ -265,9 +265,7 @@ export default function App() {
         </div>{" "}
         &nbsp;{person.pronouns}&nbsp;{person.school}&nbsp;{person.gy}&nbsp;
         {person.fc}
-        {person.tori}&nbsp;{person.dogcat} &nbsp;
-        {/* &nbsp;{person[0]}&nbsp;{person[1]}&nbsp;{person[2]}&nbsp;{person[3]}
-        &nbsp;{person[4]}&nbsp;{person[5]}&nbsp;{person[6]}&nbsp;{person[7]} */}
+        {person.tori}&nbsp;{person.dogcat}
       </div>
     );
   });

@@ -2,9 +2,26 @@
   font-family: sans-serif;
   text-align: center;
   background-color: lightblue;
-  border-style: inset;
+  /* border-style: inset;
   border-width: thick;
-  border-color: darkmagenta;
+  border-color: darkmagenta; */
+
+  /*got lucky and found this*/
+  background: linear-gradient(-45deg, #23a6d5, #f700ff);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .first {
