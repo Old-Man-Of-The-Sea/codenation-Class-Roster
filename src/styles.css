@@ -2,7 +2,9 @@
   font-family: sans-serif;
   text-align: center;
   background-color: lightblue;
-  border-style: solid;
+  border-style: inset;
+  border-width: thick;
+  border-color: darkmagenta;
 }
 
 .first {
