@@ -1,4 +1,11 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  background-color: lightblue;
+  border-style: solid;
+}
+
+.first {
+  font-weight: bold;
+  font-family: Georgia, serif;
 }

@@ -70,7 +70,7 @@ export default function App() {
       school: "Macalester",
       gy: "2026",
       FC: "Red",
-      tori: "I"
+      tori: "Insta"
     }, //5
     {
       firstName: "Denny",
@@ -257,22 +257,26 @@ export default function App() {
     // console.log("im here");
     // console.log(person);
     // TODO
+
     return (
-      <span>
-        &nbsp;{person.firstName}&nbsp;{person.lastname}&nbsp;{person.pronouns}
-        &nbsp;{person.school}&nbsp;{person.gy}&nbsp;{person.fc}&nbsp;
+      <div>
+        <div className="first">
+          {person.firstName}&nbsp;{person.lastname}&nbsp;
+        </div>{" "}
+        &nbsp;{person.pronouns}&nbsp;{person.school}&nbsp;{person.gy}&nbsp;
+        {person.fc}
         {person.tori}&nbsp;{person.dogcat} &nbsp;
         {/* &nbsp;{person[0]}&nbsp;{person[1]}&nbsp;{person[2]}&nbsp;{person[3]}
         &nbsp;{person[4]}&nbsp;{person[5]}&nbsp;{person[6]}&nbsp;{person[7]} */}
-      </span>
+      </div>
     );
   });
 
   return (
-    <span className="App">
+    <div className="App">
       <h1>Codenation Class Roster</h1>
       {List}
-    </span>
+    </div>
   );
 }
 
