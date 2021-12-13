@@ -147,7 +147,7 @@ export default function App() {
       lastname: "Murshed",
       pronouns: [One],
       school: "Brooklyn College",
-      gy: ["2025"],
+      gy: "2025",
       fc: [B],
       tori: [T],
       dogcat: [D]
@@ -157,7 +157,7 @@ export default function App() {
       lastname: "Murshed",
       pronouns: [One],
       school: "Brooklyn College",
-      gy: ["2025"],
+      gy: "2025",
       fc: [B],
       tori: [T],
       dogcat: [D] //16
@@ -168,7 +168,7 @@ export default function App() {
       pronouns: [One],
       school: "Uncommon Leadership Charter HS",
       gy: [Date],
-      fc: ["Green"],
+      fc: "Green",
       tori: [I],
       dogcat: [C] //17
     },
@@ -187,18 +187,18 @@ export default function App() {
       lastname: "Sanchez",
       pronouns: [One],
       school: "UIC",
-      gy: ["2025"],
-      fc: ["Black"],
+      gy: "2025",
+      fc: "Black",
       tori: [I],
-      dogcat: ["Fish"]
+      dogcat: "Fish"
     }, //19
     {
       firstName: "Itzel",
       lastname: "Sanchez",
       pronouns: [Two],
-      school: "Westinghouse ",
+      school: "Westinghouse",
       gy: [Date],
-      fc: ["purple"],
+      fc: "purple",
       tori: [T],
       dogcat: [C]
     }, //20
@@ -207,24 +207,50 @@ export default function App() {
       lastname: "Schuster",
       pronouns: [One],
       school: "Latin School of Chicago ",
-      gy: ["2023"],
-      fc: ["Orange"]
+      gy: "2023",
+      fc: "Orange"
     }, //21
-    ["Angel", "Smythe", [One]], //22
-    ["Imani", "Taylor", [Two], "P-tech", [Date], "Pink", [T], [C]], //23
-    ["Issac", "Teoh", [One], "Queens Technical HS", [Date], [I], [C]], //24
-    ["David", "Vital"[One]], //25
-    ["Desean", "Blackburn", [One], "", [Date], "green", [I], [C]], //26
-    [
-      "Chinaza",
-      "Onwukanjo",
-      [Two],
-      "Frederick Douglass Academy",
-      "2023",
-      "Purple",
-      "Youtube",
-      [D]
-    ] //27
+    { firstName: "Angel", lastname: "Smythe", pronouns: [One] }, //22
+    {
+      firstName: "Imani",
+      lastname: "Taylor",
+      pronouns: [Two],
+      school: "P-tech",
+      gy: [Date],
+      fc: "Pink",
+      tori: [T],
+      dogcat: [C]
+    }, //23
+    {
+      firstName: "Issac",
+      lastname: "Teoh",
+      pronouns: [One],
+      school: "Queens Technical HS",
+      gy: [Date],
+      tori: [I],
+      dogcat: [C]
+    }, //24
+    { firstName: "David", lastname: "Vital", pronouns: [One] }, //25
+    {
+      firstName: "Desean",
+      lastname: "Blackburn",
+      pronouns: [One],
+      school: "",
+      gy: [Date],
+      fc: "green",
+      tori: [I],
+      dogcat: [C]
+    }, //26
+    {
+      firstName: "Chinaza",
+      lastname: "Onwukanjo",
+      pronouns: [Two],
+      school: "Frederick Douglass Academy",
+      gy: "2023",
+      fc: "Purple",
+      tori: "Youtube",
+      dogcat: [D]
+    } //27
   ];
 
   let List = people.map(function (person) {
