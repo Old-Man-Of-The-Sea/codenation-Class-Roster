@@ -1,16 +1,28 @@
 .App {
   font-family: sans-serif;
   text-align: center;
-  background-color: lightblue;
+
   /* border-style: inset;
   border-width: thick;
   border-color: darkmagenta; */
 
   /*got lucky and found this*/
-  background: linear-gradient(-45deg, #23a6d5, #f700ff);
+  background: linear-gradient(-45deg, #0fb7f5, #9308bdf1);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
+body {
+  background: #f54785;
+}
+.first {
+  font-weight: bold;
+  font-family: Georgia, serif;
+}
+
+.meh {
+  text-shadow: 3px 3px 4px lightblue;
+}
+/*hover:hover{ } */
 
 @keyframes gradient {
   0% {
@@ -22,9 +34,4 @@
   100% {
     background-position: 0% 50%;
   }
-}
-
-.first {
-  font-weight: bold;
-  font-family: Georgia, serif;
 }

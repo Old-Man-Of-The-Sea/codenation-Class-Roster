@@ -262,7 +262,7 @@ export default function App() {
       <div>
         <div className="first">
           {person.firstName}&nbsp;{person.lastname}&nbsp;
-        </div>{" "}
+        </div>
         &nbsp;{person.pronouns}&nbsp;{person.school}&nbsp;{person.gy}&nbsp;
         {person.fc}
         {person.tori}&nbsp;{person.dogcat}
@@ -273,17 +273,15 @@ export default function App() {
   return (
     <div className="App">
       <h1>Codenation Class Roster</h1>
+      <h5>FirstName, LastName </h5>
+      <h5>
+        {" "}
+        Pronouns, School, GraduationYear, FavColor, TikTok or Insta, FavPet
+      </h5>
       {List}
     </div>
   );
 }
-
-// let array = [];
-// for (let name of Person) {
-//   let First = name[0];
-//   let Last = name[1];
-//   let Pronouns = PR[2];
-// };
 
 // function Person(First, Last, Pronouns, School, GY, FC, TorI, DogCat) {
 //   return (
